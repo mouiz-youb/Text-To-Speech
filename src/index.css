@@ -1,0 +1,88 @@
+.typing {
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #7e2ea0;
+  animation: typing 2s steps(12, end), cursor 0.2s steps(12, end) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+    /* opacity: 0; */
+    cursor: none;
+  }
+}
+.text {
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* border-right: 2px solid #7e2ea0; */
+  animation: typing2 2s steps(12, end) forwards;
+}
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.2s steps(1, end) 10 forwards;
+}
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+/* Typing effect: reveal text over 2 seconds using discrete steps */
+.typing2 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid transparent;
+  animation: typingAnim 2s steps(20, end) forwards;
+}
+
+/* Keyframes for the typing animation */
+@keyframes typingAnim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor animation */
+.blinking {
+  animation: blinkAnim 0.8s step-end infinite;
+}
+
+/* Hide the element when not animating */
+.hidden {
+  display: none;
+}
+
+/* Keyframes for blinking effect */
+@keyframes blinkAnim {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
