@@ -10,7 +10,10 @@ function Test() {
     // Only call speak if voices are loaded and we haven't spoken already.
     if (!hasSpoken && voices.length > 0) {
       speak({
-        text: "hello  estin hello mather fuckers ",
+        text: "hello world form estin ",
+        rate: 1, // normal speaking rate
+        pitch: 1, // normal pitch
+        lang: "en-US",
         onEnd: () => {
           console.log("Speech finished");
           setIsAnimated(true);
@@ -23,7 +26,7 @@ function Test() {
   return (
     <div className="flex justify-center items-center flex-row gap-2 ">
       <p className={` text-3xl ${!isAnimated ? `text` : ``}`}>
-        hello estin hello mather fuckers
+        hello world form estin
       </p>
       <span className={` text-3xl ${!isAnimated ? `corsor ` : ``}`}>|</span>
     </div>
