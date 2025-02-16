@@ -3,6 +3,7 @@ import "./App.css";
 import TextToSpeech from "./components/TextToSpeech";
 import Test from "./components/Test";
 import SliderOne from "./components/SliderOne";
+import SliderTwo from "./components/SliderTwo";
 function App() {
   return (
     <div className="flex justify-center items-center flex-col gap-5 overflow-hidden ">
@@ -10,6 +11,7 @@ function App() {
       {/* <TextToSpeech /> */}
       {/* <Test /> */}
       <SliderOne />
+      {/* <SliderTwo /> */}
     </div>
   );
 }

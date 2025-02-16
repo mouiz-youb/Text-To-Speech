@@ -86,3 +86,7 @@
     opacity: 0;
   }
 }
+.transform1 {
+  transform-origin: center;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+}
