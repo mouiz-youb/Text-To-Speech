@@ -1,39 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-import dark4 from "../assets/dark4.jpg";
-import dark3 from "../assets/dark3.jpg";
-import dark2 from "../assets/dark2.jpg";
-import "../index.css";
 function SliderTwo() {
   return (
-    <div className=" flex justify-center items-center flex-col transform-3d ">
-      <div className=" w-screen h-screen flex justify-center items-center flex-row gap-2 transform-3d relative perspective-[1000px] rotateY-0 ">
-        <span className="flex justify-center items-center w-[40%] absolute transform-3d top-0 left-0 transform1 ">
-          <img src={dark4} className="w-[100%]" alt="" />
-        </span>
-        <span className="flex justify-center items-center w-[40%] absolute transform-3d top-0 left-0 transform1">
-          <img src={dark4} className="w-[100%]" alt="" />
-        </span>
-        <span className="flex justify-center items-center w-[40%] absolute transform-3d top-0 left-0 transform1">
-          <img src={dark4} className="w-[100%]" alt="" />
-        </span>
-        <span className="flex justify-center items-center w-[40%] absolute transform-3d top-0 left-0 transform1">
-          <img src={dark4} className="w-[100%]" alt="" />
-        </span>
-        <span className="flex justify-center items-center w-[40%] absolute transform-3d top-0 left-0 transform1">
-          <img src={dark4} className="w-[100%]" alt="" />
-        </span>
-        <span className="flex justify-center items-center w-[40%] absolute transform-3d top-0 left-0 transform1">
-          <img src={dark4} className="w-[100%]" alt="" />
-        </span>
-        <span className="flex justify-center items-center w-[40%] absolute transform-3d top-0 left-0 transform1">
-          <img src={dark4} className="w-[100%]" alt="" />
-        </span>
-        <span className="flex justify-center items-center w-[40%] absolute transform-3d top-0 left-0 transform1">
-          <img src={dark4} className="w-[100%]" alt="" />
-        </span>
-      </div>
-      <div></div>
+    <div className="bg-blue-400 flex justify-center items-center gap-5 w-screen h-screen [perspective:1000px] relative">
+      <motion.div className="w-[200px] h-[200px] bg-amber-200 absolute origin-center [transform:translateZ(500px)_rotateY(0deg)]"></motion.div>
+      <motion.div className="w-[200px] h-[200px] bg-amber-200 absolute origin-center [transform:translateZ(500px)_rotateY(45deg)]"></motion.div>
+      <motion.div className="w-[200px] h-[200px] bg-amber-200 absolute origin-center [transform:translateZ(500px)_rotateY(90deg)]"></motion.div>
+      <motion.div className="w-[200px] h-[200px] bg-amber-200 absolute origin-center [transform:translateZ(500px)_rotateY(135deg)]"></motion.div>
+      <motion.div className="w-[200px] h-[200px] bg-amber-200 absolute origin-center [transform:translateZ(500px)_rotateY(180deg)]"></motion.div>
+      <motion.div className="w-[200px] h-[200px] bg-amber-200 absolute origin-center [transform:translateZ(500px)_rotateY(225deg)]"></motion.div>
+      <motion.div className="w-[200px] h-[200px] bg-amber-200 absolute origin-center [transform:translateZ(500px)_rotateY(270deg)]"></motion.div>
+      <motion.div className="w-[200px] h-[200px] bg-amber-200 absolute origin-center [transform:translateZ(500px)_rotateY(315deg)]"></motion.div>
+      <motion.div className="w-[200px] h-[200px] bg-amber-200 absolute origin-center [transform:translateZ(500px)_rotateY(360deg)]"></motion.div>
     </div>
   );
 }
